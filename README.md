@@ -18,6 +18,26 @@ This repository is a **small demo** showing how to:
 - 🔁 Hot reload in development using `uvicorn --reload`
 
 ---
+## How to Start the backend (FastAPI + MusicGen)
+
+From the project root:
+
+```bash
+# 1) (optional) create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+
+# 2) install dependencies (only needed the first time)
+pip install --upgrade pip
+pip install torch torchaudio
+pip install transformers scipy fastapi "uvicorn[standard]"
+
+# 3) (optional) create the static folder for generated audio
+mkdir static
+
+# 4) run the FastAPI server
+uvicorn main:app --reload
+
 
 ## Project Structure
 
