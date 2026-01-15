@@ -20,14 +20,6 @@ This repository is a **small demo** showing how to:
 
 ---
 
-## Project Structure
-
-```text
-musicgen_web_demo/
-├── main.py        # FastAPI backend (MusicGen + API)
-├── index.html     # Frontend: text input + button + <audio> player
-└── static/        # Generated audio files (.wav) are stored here
-
 ## How to Run the Web Demo
 
 This project has **two parts**:
@@ -55,3 +47,12 @@ pip install transformers scipy fastapi "uvicorn[standard]"
 
 # 3) run the FastAPI server
 uvicorn main:app --reload
+
+## Project Structure
+
+```text
+musicgen_web_demo/
+├── main.py        # FastAPI backend (MusicGen + API)
+├── index.html     # Frontend: text input + button + <audio> player
+└── static/        # Generated audio files (.wav) are stored here
+
