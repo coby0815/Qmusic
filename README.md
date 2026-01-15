@@ -5,7 +5,7 @@ This repository is a **small demo** showing how to:
 - Use **Meta's open-source MusicGen** model (via Hugging Face `transformers`) to generate music from text, and  
 - Expose it as a simple **web application** with a FastAPI backend and a static HTML/JS frontend.
 
-> 💡 I did **not** train my own model. This project focuses on **system design and integration**: wrapping an existing LLM-style model (MusicGen) into a web service and embedding it into a web page.
+> This project focuses on **system design and integration**: wrapping an existing LLM-style model (MusicGen) into a web service and embedding it into a web page.
 
 ---
 
