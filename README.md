@@ -17,7 +17,14 @@ This repository is a **small demo** showing how to:
 - 🎧 **Frontend**: simple HTML + CSS + JavaScript
 - 🎵 Generated music is saved as `.wav` in a `static/` folder and played in a `<audio>` element
 - 🔁 Hot reload in development using `uvicorn --reload`
+- 
+## Project Structure
 
+```text
+musicgen_web_demo/
+├── main.py        # FastAPI backend (MusicGen + API)
+├── index.html     # Frontend: text input + button + <audio> player
+└── static/        # Generated audio files (.wav) are stored here
 ---
 
 ## How to Run the Web Demo
@@ -49,11 +56,5 @@ mkdir static
 # 3) run the FastAPI server
 uvicorn main:app --reload
 
-## Project Structure
 
-```text
-musicgen_web_demo/
-├── main.py        # FastAPI backend (MusicGen + API)
-├── index.html     # Frontend: text input + button + <audio> player
-└── static/        # Generated audio files (.wav) are stored here
 
