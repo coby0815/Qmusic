@@ -44,6 +44,7 @@ source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install --upgrade pip
 pip install torch torchaudio
 pip install transformers scipy fastapi "uvicorn[standard]"
+mkdir static
 
 # 3) run the FastAPI server
 uvicorn main:app --reload
